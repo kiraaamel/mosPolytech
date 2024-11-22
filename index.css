@@ -48,7 +48,6 @@ b {
 .polit {
     text-align: center;
     font-size: 2em;
-    font-style: Impact, fantasy;
 }
 
 .ssilki {
@@ -74,5 +73,5 @@ li {
 
 I {
     font-size: 1.6em;
-    font-style: American Typewriter, serif;
+    font-family: American Typewriter, serif;
 }
