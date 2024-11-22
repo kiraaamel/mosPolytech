@@ -1,5 +1,5 @@
 body {
-    font-family: Optima, sans-serif;
+    font-style: Optima, sans-serif;
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 30 px;
@@ -48,7 +48,7 @@ b {
 .polit {
     text-align: center;
     font-size: 2em;
-    font-family: Impact, fantasy;
+    font-style: Impact, fantasy;
 }
 
 .ssilki {
@@ -74,6 +74,5 @@ li {
 
 I {
     font-size: 1.6em;
-    font-style:normal;
-    font-family: American Typewriter, serif;
+    font-style: American Typewriter, serif;
 }
