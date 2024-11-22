@@ -23,6 +23,7 @@ a {
     color: #C71585; 
     text-decoration-style: wavy;
     text-decoration-color: #FF69B4
+    font-family: Courier New, monospace;
 }
 
 a:hover {
