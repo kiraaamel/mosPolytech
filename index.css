@@ -40,7 +40,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: purple; /* цвет полосы прокрутки при наведении */
+    background: #FFC0CB; /* цвет полосы прокрутки при наведении */
 }
 
 
