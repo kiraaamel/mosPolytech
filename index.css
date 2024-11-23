@@ -99,12 +99,7 @@ b {
 }
 
 .ssilki ~ p{
-    text-align: justify;
-    line-height: 1.5;
-    font-family: American Typewriter, serif;
-    font-size: 1.2em;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    color: red
 }
 
 li {
