@@ -33,7 +33,7 @@ body {
     width: 12px;
 }
 ::-webkit-scrollbar-track {
-    background: black; 
+    background: white; 
 }
 ::-webkit-scrollbar-thumb {
     background: pink; /* цвет самой полосы прокрутки */
