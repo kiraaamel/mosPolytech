@@ -98,7 +98,7 @@ b {
     font-size: 2vw;
 }
 
-.ssilki ~ p{
+a ~ li{
     color: red
 }
 
