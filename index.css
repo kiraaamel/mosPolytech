@@ -29,10 +29,21 @@ body {
   color: var(--text-color);
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: pink;
-  border-radius: 10px;
+::-webkit-scrollbar {
+    width: 12px;
 }
+::-webkit-scrollbar-track {
+    background: red; 
+}
+::-webkit-scrollbar-thumb {
+    background: pink; /* цвет самой полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: blue; /* цвет полосы прокрутки при наведении */
+}
+
+
 
 h1 {
     color: #993399; 
