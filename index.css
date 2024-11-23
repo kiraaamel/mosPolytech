@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+    text-decoration: underline;
     color: #9400D3;
 }
 
