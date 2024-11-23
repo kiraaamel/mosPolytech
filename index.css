@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: Times, Times New Roman, serif;
     margin-left: 90px;
@@ -36,6 +40,10 @@ h1 {
     margin-bottom: 20px;
     font-size: 3em;
     -webkit-text-stroke: 2px black;
+}
+
+a[href^="https"] {
+  color: dodgerblue;
 }
 
 p {
@@ -82,7 +90,7 @@ b {
     font-size: 5vw;
 }
 
-.text {
+.text ~ I{
     text-align: justify;
     line-height: 1.5;
     font-family: American Typewriter, serif;
@@ -100,7 +108,3 @@ li {
     margin-bottom: 5px;
 }
 
-I {
-    font-size: 1.6em;
-    font-family: American Typewriter, serif;
-}
