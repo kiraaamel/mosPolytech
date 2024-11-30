@@ -9,7 +9,7 @@ body {
 
 h1 {
     color: #993399; 
-    font-family: "Sofia", sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center; 
     margin-bottom: 20px;
 }
@@ -19,7 +19,8 @@ div > img {
     margin: auto;
     float: left;
     margin-right: 20px;
-    border-radius: 2em;
+    border: 5px dashed #ff00dd;
+    border-radius: 5em;
     height: 300px;
     max-width: 100%;
     min-width: 200px;
@@ -27,7 +28,6 @@ div > img {
 
 .krich {
     text-align: center;
-    font-size: 2em;
     color:#660066;
     font-size: 3em;
     font-weight: 800;
@@ -47,15 +47,18 @@ div > img {
 
 a[href^="http://"] { 
     color: #a67795; 
-    text-decoration: none;
     font-size: larger;
     font-weight: 300;
     font-family: "Audiowide", sans-serif;
     line-height: 1em;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {  
-    color: red;
+    color: blue;
 }
 
 .text {
