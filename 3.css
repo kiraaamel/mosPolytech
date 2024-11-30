@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px 90px 30px 90px;
+    background-color: #e5ddee; 
+} 
+
+h1 {
+    color: #993399; 
+    font-family: "Sofia", sans-serif;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+div > img { 
+    display: block;
+    margin: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 2em;
+    height: 300px;
+    max-width: 100%;
+    min-width: 200px;
+}
+
+.krich {
+    text-align: center;
+    font-size: 2em;
+    color:#660066;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.s{
+    font-weight: 200;
+    color:darkmagenta;
+    background-color:plum;
+    text-align: right;
+    font-size: 2em;
+    line-height: 2em;
+    border-radius: 1.5cm;
+    padding: 10px;
+    position: relative; 
+}
+
+a[href^="http://"] { 
+    color: #a67795; 
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 300;
+    font-family: "Audiowide", sans-serif;
+    line-height: 1em;
+}
+
+a:hover {  
+    color: red;
+}
+
+.text {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: "Trirong", serif;
+    font-size: 1.2em;
+    color: #2f2532;
+}
+
+#fakultety-i-instituty { 
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    color:#660066;
+}
+
+div li { 
+    color: #660066;
+    font-size: 2em;
+    line-height: 1.5em;
+    position: relative;
+    padding-left: 30px;
+}
+
+li::before { 
+    content: "🌸 ";
+}
+
+ul {
+    max-width: 800px;
+    margin: auto;
+}
