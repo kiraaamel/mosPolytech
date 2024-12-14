@@ -3,54 +3,77 @@
 }
 
 body {
-    margin: 30px 90px 30px 90px;
-    background-color: #e5ddee; 
+    margin: 30px 90px;
+    background-image: url('C:/Users/Кира/Desktop/универ/веб/2 лаба/фон.jpg');
 } 
 
 h1 {
-    color: #993399; 
-    font-family: 'Roboto', sans-serif;
+    color: purple; 
+    font-family: "Pacifico", cursive;
     text-align: center; 
-    margin-bottom: 20px;
+    color: rgb(153, 51, 153); 
+    font-family: "Pacifico", cursive; 
+    left: 50%; /*отн середины экрана */
+    transform: translateX(-50%); /* свдиг на половину его ширины */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: aliceblue;
+}
+
+body::before {
+    content: "";
+    display: block;
+    height: 50px; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /*выстраивание элементов по порядку*/
+    align-items: flex-start; /* вертикальное выравнивание отн верхней границы */
+    gap: 20px; /* отступы между элем*/
+    padding: 20px;
+    background-color: rgba(146, 104, 210, 0.554); 
+    border-radius: 15px;
 }
 
 div > img { 
     display: block;
-    margin: auto;
-    float: left;
-    margin-right: 20px;
-    border: 5px dashed #ff00dd;
+    border: 5px dashed #ff00dd; /*hex*/
     border-radius: 5em;
-    height: 300px;
+    width: 75%;
     max-width: 100%;
-    min-width: 200px;
+    min-width: 50%;
+    height: auto;
+    flex: 1; 
 }
 
 .krich {
     text-align: center;
-    color:#660066;
-    font-size: 3em;
+    color: hsl(300, 100%, 20%);
+    font-size: 3vw;
     font-weight: 800;
 }
 
-.s{
+.s {
     font-weight: 200;
-    color:darkmagenta;
-    background-color:plum;
+    color: darkmagenta;
+    background-color: plum;
     text-align: right;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 2em;
     border-radius: 1.5cm;
-    padding: 10px;
-    position: relative; 
+    padding: 1ch;
+    position: relative;
+    left: 80px;
 }
 
 a[href^="http://"] { 
-    color: #a67795; 
+    color: hsla(322, 21%, 56%, 1);
     font-size: larger;
     font-weight: 300;
     font-family: "Audiowide", sans-serif;
-    line-height: 1em;
 }
 
 a {
@@ -66,22 +89,23 @@ a:hover {
     line-height: 1.5;
     font-family: "Trirong", serif;
     font-size: 1.2em;
-    color: #2f2532;
+    color: rgba(47, 37, 50, 1);
 }
 
 #fakultety-i-instituty { 
     font-size: 3em;
     font-weight: 700;
     text-align: center;
-    color:#660066;
+    color: #660066;
 }
 
 div li { 
     color: #660066;
     font-size: 2em;
     line-height: 1.5em;
-    position: relative;
-    padding-left: 30px;
+    padding-left: 60px;
+    height: 80px;
+    max-height: 100px;
 }
 
 li::before { 
@@ -89,6 +113,17 @@ li::before {
 }
 
 ul {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
+}
+
+.kotik {
+    object-fit: cover;
+    max-width: 20%;
+    border: 5px dashed #ff00dd;
+    border-radius: 5em;
+}
+
+.fig {
+    text-align: left;
 }
