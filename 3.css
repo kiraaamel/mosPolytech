@@ -4,7 +4,7 @@
 
 body {
     margin: 30px 90px;
-    background-image: url('C:/Users/Кира/Desktop/универ/веб/2 лаба/фон.jpg');
+    background-image: url('./фон.jpg');
 } 
 
 h1 {
@@ -29,6 +29,7 @@ body::before {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-wrap: wrap; /*выстраивание элементов по порядку*/
     align-items: flex-start; /* вертикальное выравнивание отн верхней границы */
@@ -43,17 +44,17 @@ div > img {
     border: 5px dashed #ff00dd; /*hex*/
     border-radius: 5em;
     width: 75%;
-    max-width: 100%;
-    min-width: 50%;
-    height: auto;
     flex: 1; 
+    /* max-height: 350px; */
 }
 
-.krich {
+.krich { 
     text-align: center;
     color: hsl(300, 100%, 20%);
     font-size: 3vw;
     font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .s {
@@ -93,7 +94,9 @@ a:hover {
 }
 
 #fakultety-i-instituty { 
-    font-size: 3em;
+    position: absolute;
+    right: 5px;
+    font-size: 2em;
     font-weight: 700;
     text-align: center;
     color: #660066;
@@ -116,14 +119,26 @@ ul {
     max-width: 1000px;
     margin: auto;
 }
-
-.kotik {
-    object-fit: cover;
-    max-width: 20%;
-    border: 5px dashed #ff00dd;
+figure {
+    text-align: center;
+    background-color: palevioletred;
     border-radius: 5em;
+    height: 50em;
+    width: 100em;
+    border: 5px solid blueviolet;
+    overflow: hidden;
 }
 
-.fig {
-    text-align: left;
+figure img{
+    width: 120%;
+    height: 120%;
+    border-radius: 5em;
+    object-fit: cover; /*исходя из своих пропорций*/
+    object-position: right top;
+}
+
+figcaption {
+    font-size: 14px;
+    color: purple;
+    text-align: center;
 }
