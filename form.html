@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Страница регистрации пользователя</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+        <a href="index.html">Моя страница</a>
+        <a href="form.html">Регистрация пользователя</a>
+</header>
+
+<main>
+    <h1>Регистрация нового пользователя</h1>
+    <form action="//httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Личная информация</legend>
+            <p><label>Ваше имя: <input type="text" name="name-field" placeholder="Введите ваше имя" required></label></p>
+            <p><label>Ваша дата рождения: <input type="date" name="happy birthday">
+            <p><label>Ваш пол: <select name="gender" required>
+                <option value="1" selected>Женский</option>
+                <option value="2">Мужской</option>
+            </select></label></p>
+            <p><label for="password">Придумайте пароль: <input type="password" name="password" id="password" value="password" required></label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Контактные данные</legend>
+            <p><label>Ваш email: <input type="email" name="email" placeholder="Введите почту"></label></p>
+            <p><label>Ваш мобильный телефон: <input type="tel" name="tel" placeholder="+7(123)456-78-90 " required></label></p>
+        </fieldset>
+        <fieldset class="rad">
+            <legend>Удобный интервал для связи:</legend>
+            <input type="radio" id="morning" name="time" value="morning" required>
+            <label class="ra" for="morning">Утро</label>
+            <input type="radio" id="afternoon" name="time" value="afternoon">
+            <label class="ra" for="afternoon">День</label>
+            <input type="radio" id="evening" name="time" value="evening" checked>
+            <label class="ra" for="evening">Вечер</label>
+            <input type="radio" id="night" name="time" value="night">
+            <label class="ra" for="night">Ночь</label>
+        </fieldset>
+        <button type="submit"><i class="fas fa-user-plus"></i> Зарегистрироваться</button>
+        <button type="reset" disabled>Сбросить</button>
+    </form>
+</main>
+
+<footer>
+    <p>Хорошего дня :)</p>
+</footer>
+
+</body>
+</html>
