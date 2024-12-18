@@ -7,6 +7,20 @@ body {
     background-image: url('./фон.jpg');
 } 
 
+header {
+    background-color: #2a1b2f;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header a {
+    color: rgb(197, 167, 241);
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: larger;
+}
+
 h1 {
     color: purple; 
     font-family: "Pacifico", cursive;
@@ -68,10 +82,10 @@ div > img {
     padding: 1ch;
     position: relative;
     left: 80px;
+    margin: 30px 90px;
 }
 
 a[href^="http://"] { 
-    color: hsla(322, 21%, 56%, 1);
     font-size: larger;
     font-weight: 300;
     font-family: "Audiowide", sans-serif;
@@ -81,8 +95,20 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    color: hsla(322, 21%, 56%, 1);
+}
+
+a:visited {
+    color: yellow;
+}
+
 a:hover {  
     color: blue;
+}
+
+a:active {
+    color:aquamarine;
 }
 
 .text {
@@ -124,9 +150,10 @@ figure {
     background-color: palevioletred;
     border-radius: 5em;
     height: 50em;
-    width: 100em;
+    width: 85em;
     border: 5px solid blueviolet;
     overflow: hidden;
+    margin: 30px 90px;
 }
 
 figure img{
@@ -134,7 +161,7 @@ figure img{
     height: 120%;
     border-radius: 5em;
     object-fit: cover; /*исходя из своих пропорций*/
-    object-position: right top;
+    object-position: left top;
 }
 
 figcaption {
