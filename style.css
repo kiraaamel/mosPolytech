@@ -85,6 +85,7 @@ input, select {
     margin-bottom: 10px;
     border: 2px solid #f19ad8;
     border-radius: 4px;
+    box-shadow: 1px -1px 77px -8px rgba(72, 39, 236, 0.88);
 }
 
 input::placeholder, select::placeholder {
@@ -119,6 +120,7 @@ button {
 
 button:hover {
     background-color: #2c0435;
+    transform: translateY(-10px);
 }
 
 button:active {

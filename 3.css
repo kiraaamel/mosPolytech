@@ -5,6 +5,7 @@
 body {
     margin: 30px 90px;
     background-image: url('./фон.jpg');
+    background-color: #8db8f6;
 } 
 
 header {
@@ -50,7 +51,9 @@ body::before {
     gap: 20px; /* отступы между элем*/
     padding: 20px;
     background-color: rgba(146, 104, 210, 0.554); 
+    background-image: url('./фон2.jpg');
     border-radius: 15px;
+    border: 3px solid purple;
 }
 
 div > img { 
@@ -109,6 +112,7 @@ a:hover {
 
 a:active {
     color:aquamarine;
+    transition: color 0.3s ease;
 }
 
 .text {
@@ -168,4 +172,47 @@ figcaption {
     font-size: 14px;
     color: purple;
     text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #660066;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #cb67e7;
+    border-radius: 50%;
+    animation: zagr 2s linear infinite, scritie 2s linear 2s forwards;
+    position: absolute; 
+}
+
+.content {
+    opacity: 0;
+    text-align: center;
+    animation: poyavlenie 2s linear 2s forwards;
+}
+
+@keyframes zagr {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes scritie {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes poyavlenie {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
