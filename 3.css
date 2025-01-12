@@ -44,25 +44,31 @@ body::before {
 }
 
 .container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap; /*выстраивание элементов по порядку*/
-    align-items: flex-start; /* вертикальное выравнивание отн верхней границы */
-    gap: 20px; /* отступы между элем*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px; /* отступы между элементами */
     padding: 20px;
-    background-color: rgba(146, 104, 210, 0.554); 
+    background-color: rgba(146, 104, 210, 0.554);
     background-image: url('./фон2.jpg');
     border-radius: 15px;
     border: 3px solid purple;
 }
 
-div > img { 
-    display: block;
-    border: 5px dashed #ff00dd; /*hex*/
-    border-radius: 5em;
-    width: 75%;
-    flex: 1; 
-    /* max-height: 350px; */
+.container > img {
+    grid-column: 1; /*по линиям сетки*/
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.container > div {
+    grid-column: 2; 
+    display: grid; 
+    grid-template-rows: auto auto; /*на все свободное пространство */
+    gap: 10px;
+    align-items: center;
 }
 
 .krich { 
@@ -148,7 +154,9 @@ li::before {
 ul {
     max-width: 1000px;
     margin: auto;
+    list-style: none;
 }
+
 figure {
     text-align: center;
     background-color: palevioletred;
@@ -162,8 +170,7 @@ figure {
 
 figure img{
     width: 120%;
-    height: 120%;
-    border-radius: 5em;
+    height: 95%;
     object-fit: cover; /*исходя из своих пропорций*/
     object-position: left top;
 }
@@ -192,7 +199,7 @@ figcaption {
     border: 5px solid #f3f3f3;
     border-top: 5px solid #cb67e7;
     border-radius: 50%;
-    animation: zagr 2s linear infinite, scritie 2s linear 2s forwards;
+    animation: zagr 2s linear infinite, scritie 2s linear 2s forwards; /*for-сохранение состояния после окончания lin-без колебаний в скорости*/
     position: absolute; 
 }
 
@@ -216,3 +223,26 @@ figcaption {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+
+/*флекс*/
+/* .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /*выстраивание элементов по порядку
+    align-items: flex-start; вертикальное выравнивание отн верхней границы 
+    gap: 20px; /* отступы между элем
+    padding: 20px;
+    background-color: rgba(146, 104, 210, 0.554); 
+    background-image: url('./фон2.jpg');
+    border-radius: 15px;
+    border: 3px solid purple;
+}
+
+div > img { 
+    display: block;
+    border: 5px dashed #ff00dd; /*hex
+    border-radius: 5em;
+    width: 75%;
+    flex: 1; 
+} */

@@ -1,150 +1,151 @@
 div {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 div.lin {
-    height: 100px;
-    background-color: red;
-    background-image:linear-gradient(to top right, red, #f06d06, yellow);
+  height: 100px;
+  background-color: red;
+  background-image: linear-gradient(to top right, red, #f06d06, yellow);
 }
 
 div.rad {
-    height: 100px;
-    background-color: red;
-    background-image: radial-gradient(circle at top right, yellow,#f06d06);
+  height: 100px;
+  background-color: red;
+  background-image: radial-gradient(circle at top right, yellow,#f06d06);
 }
 
 div.con {
-    height: 100px;
-    background: conic-gradient(red, orange, yellow, green, rgb(80, 133, 226), blue, purple, red);
+  height: 100px;
+  background: conic-gradient(red, orange, yellow, green, rgb(80, 133, 226), blue, purple, red);
 }
 
 p {
-    animation-duration: 5s; /*время*/
-    animation-name: slidetext;
-    color: palevioletred;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  
-  @keyframes slidetext {
-    from {
-      margin-left: 100%;
-      width: 200%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  animation-duration: 5s;
+  animation-name: slidetext;
+  color: palevioletred;
+  animation-iteration-count: 10;
+  animation-direction: alternate; /*направление*/
+}
 
-    75% {
-        font-size: 200%;
-        margin-left: 25%;
-        width: 150%;
-      }
+@keyframes slidetext {
+  from {
+    margin-left: 100%;
+    width: 200%;
   }
-  
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  75% {
+      font-size: 200%;
+      margin-left: 25%;
+      width: 150%;
+    }
+}
+
 .square {
-    width: 100px;
-    height: 100px;
-    background-color: #551fe7;
-    animation-name: sqq;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+  width: 100px;
+  height: 100px;
+  background-color: #551fe7;
+  animation-name: sqq;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; /*в середине ускоряется*/
+}
+
+@keyframes sqq {
+  0% {
+    transform: translate(0, 0);
+    background-color: #35034f;
   }
-  
-  @keyframes sqq {
-    0% {
-      transform: translate(0, 0);
-      background-color: #35034f;
-    }
-    50% {
-      transform: translate(150px, 150px);
-      background-color: #c57df5;
-    }
-    100% {
-      transform: translate(0, 0);
-      background-color: #7388ed;
-    }
+  50% {
+    transform: translate(150px, 150px);
+    background-color: #c57df5;
   }
+  100% {
+    transform: translate(0, 0);
+    background-color: #7388ed;
+  }
+}
 
 .cube {
-    width: 100px;
-    height: 100px;
-    margin-left: 50%;
-    background-color: #f002a9;
-    animation-name: cube3;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    transform-origin: center; /*точка вращения*/
-  }
+  width: 100px;
+  height: 100px;
+  margin-left: 50%;
+  background-color: #f002a9;
+  animation-name: cube3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center; /*точка вращения*/
+}
 
-  @keyframes cube3 {
-    0% {
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    50% {
-      transform: rotateX(20deg) rotateY(20deg) rotateZ(20deg);
-    }
-    100% {
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
+@keyframes cube3 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
+  50% {
+    transform: rotateX(20deg) rotateY(20deg) rotateZ(20deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
 
 .text {
-    font-size: 2rem;
-    margin-top: 400px;
-    font-weight: bold;
-    color: rgb(94, 4, 4);
-    animation-name: text3;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    transform-origin: center;
+  font-size: 2rem;
+  margin-top: 400px;
+  font-weight: bold;
+  color: rgb(94, 4, 4);
+  animation-name: text3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes text3 {
+  0% {
+    transform: rotateY(0deg);
   }
-  
-  @keyframes text3 {
-    0% {
-      transform: rotateY(0deg);
-    }
-    100% {
-      transform: rotateY(360deg);
-    }
+  100% {
+    transform: rotateY(360deg);
   }
+}
 
 .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-left: 20px;
-    border: 3px solid coral;
-    border-radius: 5px;
-    background-color: #f06d06;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  .button:hover {
-    background-color: red;
-    transform: scale(1.5);
-  }
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 20px;
+  border: 3px solid coral;
+  border-radius: 5px;
+  background-color: #f06d06;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: red;
+  transform: scale(1.5);
+}
 
 .n {
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-    background-color: rgb(205, 33, 33);
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    opacity: 0.5;
-    transition: opacity 1s, color 1s, transform 1s;
-  }
-  
-  .n:hover {
-    opacity: 1;
-    color: black;
-    transform: translateY(-20px);
-  }
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  background-color: rgb(205, 33, 33);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: opacity 1s, color 1s, transform 1s;
+}
+
+.n:hover {
+  opacity: 1;
+  color: black;
+  transform: translateY(-20px);
+}
